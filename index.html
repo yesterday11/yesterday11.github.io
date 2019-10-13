@@ -5,17 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>yesterday11博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en">
+  <meta name="description" content="一步一步往前走。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="yesterday11博客">
+<meta property="og:url" content="https://yesterday11.github.io/index.html">
+<meta property="og:site_name" content="yesterday11博客">
+<meta property="og:description" content="一步一步往前走。">
+<meta property="og:locale" content="cn">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="yesterday11博客">
+<meta name="twitter:description" content="一步一步往前走。">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="yesterday11博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -34,8 +37,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">yesterday11博客</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">跑步/做饭/敲代码</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -54,7 +61,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://yesterday11.github.io"></form>
       </div>
     </div>
   </div>
@@ -97,16 +104,17 @@
 
 <h2 id="扩展说明"><a href="#扩展说明" class="headerlink" title="扩展说明"></a>扩展说明</h2><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><pre><code>source/_posts：里面的md文件 (markdown文件)为博客上的文章,可将md文件存放至该目录来更新博客，hexo new
 生成的文章也存放在这里；
-themes：为博客的主题，可从Git Hub下载主题并通过修改 _config.yml 来应用主题</code></pre><p>###更换主题：<br>    1.在git bash中输入以下代码进行克隆：<br>    git clone <a href="http://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">http://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>    * 2.修改 _config.yml文件中修改 _config.yml文件<br>    * 3.部署到github</p>
-<p><strong>注意：</strong><br>    themes/yilia 为保存目录，将theme改为刚刚保存的目录 yilia;<br>    http链接为目标代码仓库(repository) 后面加上 .git;<br>    大部分修改配置后可以直接刷新页面进行预览，如更改配置、更新文章等等。但有的操作需要清除缓存重新部署页面才<br>    可以生效，比如更新插件等等,可以用以下命令处理;<br>    hexo clean #清除缓存文件<br>    hexo g -s #在本地生成页面直接部署,可通过localhost:4000查看</p>
-<p>###hexo常用快捷键</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;title&quot; 新建文章(md文件)，title为文章的标题 </span><br><span class="line">hexo new page &quot;pagename&quot; 新建网页，pagename为网页的名称 </span><br><span class="line">hexo clean 清除部署的緩存 </span><br><span class="line">hexo n == hexo new 新建一篇文章 </span><br><span class="line">hexo g == hexo generate 生成静态页面 </span><br><span class="line">hexo s == hexo server 本地部署，可预览网站，默认端口为4000，浏览器输入localhost:4000即可进入网站进行预览，</span><br><span class="line">回到git-bash按ctrl+c退出预览(退出后localhost:4000失效) </span><br><span class="line">hexo d == hexo deploy 将网站部署到GitHub </span><br><span class="line">hexo g -d 生成页面并部署到GitHub </span><br><span class="line">hexo g -s 生成页面并本地部署进行预览</span><br></pre></td></tr></table></figure>
+themes：为博客的主题，可从Git Hub下载主题并通过修改 _config.yml 来应用主题</code></pre><h3 id="更换主题："><a href="#更换主题：" class="headerlink" title="更换主题："></a>更换主题：</h3><pre><code>1.在git bash中输入以下代码进行克隆：
+git clone http://github.com/litten/hexo-theme-yilia.git themes/yilia
+* 2.修改 _config.yml文件中修改 _config.yml文件
+* 3.部署到github</code></pre><p><strong>注意：</strong><br>    themes/yilia 为保存目录，将theme改为刚刚保存的目录 yilia;<br>    http链接为目标代码仓库(repository) 后面加上 .git;<br>    大部分修改配置后可以直接刷新页面进行预览，如更改配置、更新文章等等。但有的操作需要清除缓存重新部署页面才<br>    可以生效，比如更新插件等等,可以用以下命令处理;<br>    hexo clean #清除缓存文件<br>    hexo g -s #在本地生成页面直接部署,可通过localhost:4000查看</p>
+<h3 id="hexo常用快捷键"><a href="#hexo常用快捷键" class="headerlink" title="hexo常用快捷键"></a>hexo常用快捷键</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;title&quot; 新建文章(md文件)，title为文章的标题 </span><br><span class="line">hexo new page &quot;pagename&quot; 新建网页，pagename为网页的名称 </span><br><span class="line">hexo clean 清除部署的緩存 </span><br><span class="line">hexo n == hexo new 新建一篇文章 </span><br><span class="line">hexo g == hexo generate 生成静态页面 </span><br><span class="line">hexo s == hexo server 本地部署，可预览网站，默认端口为4000，浏览器输入localhost:4000即可进入网站进行预览，</span><br><span class="line">回到git-bash按ctrl+c退出预览(退出后localhost:4000失效) </span><br><span class="line">hexo d == hexo deploy 将网站部署到GitHub </span><br><span class="line">hexo g -d 生成页面并部署到GitHub </span><br><span class="line">hexo g -s 生成页面并本地部署进行预览</span><br></pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/13/how build blog by hexo/" data-id="ck1os3kob00003ku3jy2lemwu" class="article-share-link">Share</a>
+      <a data-url="https://yesterday11.github.io/2019/10/13/how build blog by hexo/" data-id="ck1otvqiz0000y0u3fi2gpdau" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +170,7 @@ themes：为博客的主题，可从Git Hub下载主题并通过修改 _config.y
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
+      &copy; 2019 yesterday11<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

@@ -187,10 +187,44 @@
 <li>VPC：是在公有云上为用户建立一块逻辑隔离的虚拟网络空间。在VPC内，用户可以自由定义网段划分、IP地址和路由<br>  策略，安全可提供网络ACL及安全组的访问控制，因此，VPC有更高的灵活性和安全性。</li>
 <li>经典网络：公有云上所有用户共享公共网络资源池，用户之间未做逻辑隔离。用户的内网IP由系统统一分配，相同的<br>  内网IP无法分配给不同用户。</li>
 </ul>
-<p>经典网络和VPC的架构对比图：<br><img src="https://github.com/yesterday11/yesterday11.github.io/blob/master/images/vpc/%E7%BB%8F%E5%85%B8%E7%BD%91%E7%BB%9C%E5%92%8CVPC%E7%9A%84%E6%9E%B6%E6%9E%84%E5%AF%B9%E6%AF%94%E5%9B%BE1.png" alt="alt text" title="经典网络和VPC的架构对比图1"><br><img src="https://github.com/yesterday11/yesterday11.github.io/blob/master/images/vpc/%E7%BB%8F%E5%85%B8%E7%BD%91%E7%BB%9C%E5%92%8CVPC%E7%9A%84%E6%9E%B6%E6%9E%84%E5%AF%B9%E6%AF%94%E5%9B%BE2.png" alt="alt text" title="经典网络和VPC的架构对比图2"></p>
+<h3 id="经典网络和VPC的架构对比图："><a href="#经典网络和VPC的架构对比图：" class="headerlink" title="经典网络和VPC的架构对比图："></a>经典网络和VPC的架构对比图：</h3><p><img src="http://image.525.life/FkKNhxICeHVWynZntonxLpW5VzLd" alt="alt text" title="经典网络和VPC的架构对比图1"><br><img src="http://image.525.life/FubY6scXcrh4b2GTdwU7zx4solJ4" alt="alt text" title="经典网络和VPC的架构对比图2"></p>
 <blockquote>
 <p>ps:如果把经典网络看成购买商品房的话，vpc就是购买地基，自己搭建房子。</p>
 </blockquote>
+<h3 id="区别总结如下："><a href="#区别总结如下：" class="headerlink" title="区别总结如下："></a>区别总结如下：</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>基础网络</th>
+<th>私有网络(VPC)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户关联</td>
+<td>多用户共用</td>
+<td>用户私有</td>
+</tr>
+<tr>
+<td>网络划分</td>
+<td>不可划分</td>
+<td>用户自定义</td>
+</tr>
+<tr>
+<td>IP规则</td>
+<td>基础网络内唯一</td>
+<td>vpc内唯一，vpc间可重复</td>
+</tr>
+<tr>
+<td>IP分配</td>
+<td>随机分配，不可修改</td>
+<td>vpc内随机分配，可自定义</td>
+</tr>
+<tr>
+<td>互通规则</td>
+<td>账号内互通</td>
+<td>vpc内互通，vpc间间隔</td>
+</tr>
+</tbody></table>
 <h2 id="使用私有网络的好处"><a href="#使用私有网络的好处" class="headerlink" title="使用私有网络的好处"></a>使用私有网络的好处</h2><blockquote>
 <p>1.灵活部署：自定义网络划分、路由规则，配置实施立即生效 ;<br>2.安全隔离：100%逻辑隔离的网络空间，我的地盘听我的 ;<br>3.丰富接入：支持公网VPN接入和专线接入;<br>4.访问控制：精确到端口的网络控制，满足金融政企的安全要求;</p>
 </blockquote>
@@ -207,7 +241,7 @@
     <span>目录</span>
   </div>
   <div class="table-content-main">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vpc是什么"><span class="toc-text">vpc是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#私有网络（VPC）与基础网络-经典网络-的区别"><span class="toc-text">私有网络（VPC）与基础网络(经典网络)的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用私有网络的好处"><span class="toc-text">使用私有网络的好处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VPC网络应用场景"><span class="toc-text">VPC网络应用场景</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vpc是什么"><span class="toc-text">vpc是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#私有网络（VPC）与基础网络-经典网络-的区别"><span class="toc-text">私有网络（VPC）与基础网络(经典网络)的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#经典网络和VPC的架构对比图："><span class="toc-text">经典网络和VPC的架构对比图：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#区别总结如下："><span class="toc-text">区别总结如下：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用私有网络的好处"><span class="toc-text">使用私有网络的好处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VPC网络应用场景"><span class="toc-text">VPC网络应用场景</span></a></li></ol>
   </div>
 </aside>
   

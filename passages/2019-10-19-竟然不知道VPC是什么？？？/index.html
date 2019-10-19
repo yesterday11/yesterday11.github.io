@@ -6,16 +6,16 @@
   <meta name="author" content="yesterday11">
   
   
-  <title>归档 | yesterday11博客</title>
+  <title>竟然不知道VPC是什么？？？.md | yesterday11博客</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="Hexo, Theme-AD">
+    <meta name="keywords" content="网络,vpc,服务器,">
   
 
   
-  <meta name="description" content="yesterday11的博客">
+  <meta name="description" content="最近公司在做将服务从现有的经典网络模式迁移到vpc上，而我竟然对vpc一点概念都没有，于是在网上一顿百度猛虎如。">
 
   
 
@@ -42,7 +42,7 @@
     welcome: {"enable":false,"interval":30},
     start_time: "2019-10-13",
     passwords: ["efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec", ],
-    is_post: false,
+    is_post: true,
     lock: false,
     author: "yesterday11",
     share: {"twitter":true,"facebook":true,"weibo":true,"qq":true,"wechat":true},
@@ -160,25 +160,92 @@
 </nav>
 <div id="site-process"></div>
     <main>
-      <div class="timeline">
-  <h2 class="timeline-title">归档: 2篇</h2>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-10-19
+    </span>
+    
+      <span>
+        | <a href="/categories/网络/"><i class="fa fa-bookmark"></i>网络</a>
+      </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    竟然不知道VPC是什么？？？.md
+  </h1>
   
-    
-      <h3 class="timeline-subtitle">2019</h3>
-    
-    <div class="timeline-item">
-      <time>2019-10-19</time>
-      <a target="_self" href="/passages/2019-10-19-竟然不知道VPC是什么？？？/">竟然不知道VPC是什么？？？.md</a>
-    </div>
+  <article class="passage-article">
+    <h2 id="vpc是什么"><a href="#vpc是什么" class="headerlink" title="vpc是什么"></a>vpc是什么</h2><p>VPC（Virtual Private Cloud）,又叫做私有/专有网络，是针对公有云的基础网络(经典网络)来定义的一种概念。是公有云上自定义的逻辑隔离网络空间，是一块可我们自定义的网络空间，与我们在数据中心运行的传统网络相似，托管在VPC内的是我们在私有云上的服务资源，如云主机、负载均衡、云数据库等。我们可以自定义网段划分、IP地址和路由策略等，并通过安全组和网络ACL等实现多层安全防护。同时也可以通过VPN或专线连通VPC与我们的数据中心，灵活部署混合云。</p>
+<h2 id="私有网络（VPC）与基础网络-经典网络-的区别"><a href="#私有网络（VPC）与基础网络-经典网络-的区别" class="headerlink" title="私有网络（VPC）与基础网络(经典网络)的区别"></a>私有网络（VPC）与基础网络(经典网络)的区别</h2><ul>
+<li>VPC：是在公有云上为用户建立一块逻辑隔离的虚拟网络空间。在VPC内，用户可以自由定义网段划分、IP地址和路由<br>  策略，安全可提供网络ACL及安全组的访问控制，因此，VPC有更高的灵活性和安全性。</li>
+<li>经典网络：公有云上所有用户共享公共网络资源池，用户之间未做逻辑隔离。用户的内网IP由系统统一分配，相同的<br>  内网IP无法分配给不同用户。</li>
+</ul>
+<p>经典网络和VPC的架构对比图：<br><img src="http://image.525.life/FkKNhxICeHVWynZntonxLpW5VzLd" alt="alt text" title="经典网络和VPC的架构对比图1"><br><img src="http://image.525.life/FubY6scXcrh4b2GTdwU7zx4solJ4" alt="alt text" title="经典网络和VPC的架构对比图2"></p>
+<blockquote>
+<p>ps:如果把经典网络看成购买商品房的话，vpc就是购买地基，自己搭建房子。</p>
+</blockquote>
+<h2 id="使用私有网络的好处"><a href="#使用私有网络的好处" class="headerlink" title="使用私有网络的好处"></a>使用私有网络的好处</h2><blockquote>
+<p>1.灵活部署：自定义网络划分、路由规则，配置实施立即生效 ;<br>2.安全隔离：100%逻辑隔离的网络空间，我的地盘听我的 ;<br>3.丰富接入：支持公网VPN接入和专线接入;<br>4.访问控制：精确到端口的网络控制，满足金融政企的安全要求;</p>
+</blockquote>
+<h2 id="VPC网络应用场景"><a href="#VPC网络应用场景" class="headerlink" title="VPC网络应用场景"></a>VPC网络应用场景</h2><p>安全网络：这个有点废话，就是让你的服务更加安全，vpc网络相比经典网络本来就更加安全</p>
+<p>混合云网络:比如经典网络与vpc的混合使用</p>
+<p>异地多活：比如服务器部署在华东、华北等</p>
+<ul>
+<li>参考资料：<a href="https://blog.csdn.net/shb_derek1/article/details/82687135" target="_blank" rel="noopener">https://blog.csdn.net/shb_derek1/article/details/82687135</a></li>
+</ul>
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vpc是什么"><span class="toc-text">vpc是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#私有网络（VPC）与基础网络-经典网络-的区别"><span class="toc-text">私有网络（VPC）与基础网络(经典网络)的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用私有网络的好处"><span class="toc-text">使用私有网络的好处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VPC网络应用场景"><span class="toc-text">VPC网络应用场景</span></a></li></ol>
+  </div>
+</aside>
   
+    <aside class="passage-copyright">
+      <div>本文作者: yesterday11</div>
+      
+        <div>
+          原文链接: 
+          <a href="" target="_blank">https://yesterday11.github.io/passages/2019-10-19-竟然不知道VPC是什么？？？/</a>
+        </div>
+      
+      <div>
+        版权声明: 本博客所有文章除特别声明外, 均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议. 转载请注明出处!
+      </div>
+    </aside>
+  
+  
+    <div class="passage-tags">
+     
+      <a href="/tags/vpc/"><i class="fa fa-tags"></i>vpc</a>
+     
+      <a href="/tags/服务器/"><i class="fa fa-tags"></i>服务器</a>
     
-    <div class="timeline-item">
-      <time>2019-10-13</time>
-      <a target="_self" href="/passages/2019-10-13-hexo搭建博客/">git+hexo搭建博客</a>
     </div>
   
 </div>
+
     </main>
+    
+      
+<div class="site-comment-contanier" data-plateform="leancloud">
+  
+    <p id="site-comment-info">
+      <i class="fa fa-spinner fa-spin"></i> 评论加载中
+    </p>
+    <div id="site-comment"></div>
+  
+</div>
     
     <div class="site-footer-wrapper">
   <footer class="site-footer">
@@ -293,16 +360,16 @@
     <a href="javascript:void(0);" data-enable="false">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/passages/2019-10-13-hexo搭建博客/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
   <div class="bottom-bar-right">
-    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
       <i class="fa fa-bars"></i>
     </a>
     
-      <a href="javascript:void(0);" data-enable="false">
+      <a href="#site-comment" data-enable="true">
         <i class="fa fa-commenting"></i>
       </a>
     
